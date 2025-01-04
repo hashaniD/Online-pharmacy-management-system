@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century;
+}
+
+h1 {
+    color: #04376e;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+/* Your existing CSS styles */
+
+.navbar .prescription-button {
+    padding: none;
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+    background-color: #ffd700; /* Yellow background color */
+    border-radius: 5px;
+    margin-left: 10px; /* Adjusted margin to get it near "About Us" */
+    position: absolute; /* Set position to absolute */
+    top: 170px; /* Adjust the vertical position */
+    right: 20px; /* Adjust the horizontal position */
+    transform: translateY(-50%); /* Center vertically using transform */
+}
+
+.navbar .prescription-button:hover {
+    background-color: #fffdfd;
+}
+
+/* Adjust the margin-right property for the "About Us" link */
+.navbar a:nth-last-child(2) {
+    margin-right: 120px; /* Adjusted margin to create space between "About Us" and "Prescription" */
+}
+
+/* Other existing styles */
+
+
+header {
+    padding-top: none;
+    padding-bottom: 40px;
+
+}
+
+body {
+    background-image: url('images/Background2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: none;
+    position: relative;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    background-color: #045F5F;
+    color: #fff;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.profile-image {
+    position: absolute;
+    top: 20px;
+    /* Adjust the vertical position to align with the Sign In button */
+    right: 30px;
+    /* Adjust the horizontal position */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Create a circular shape */
+    overflow: hidden;
+    /* Ensure the image stays within the circular shape */
+    margin-right: 20px;
+    /* Adjust the margin to create space between the button and the image */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Maintain the aspect ratio of the image */
+    border-radius: 50%;
+    /* Ensure the image itself is circular */
+}
+
+/* Style for the sign-in button */
+.signin-button {
+    background-color: #00ff6a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    /* Add position: absolute */
+    top: 20px;
+    /* Adjust top value as needed */
+    right: 100px;
+    /* Adjust right value as needed */
+}
+
+/* Style for login button */
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 200px;
+    /* Adjust the horizontal position */
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 2;
+    /* Ensure the button is above other elements */
+}
+
+.navbar {
+    background-color: none;
+    /* Set your desired background color here */
+}
+
+.navbar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.navbar a:hover {
+    background-color:#045F5F;
+}
+
+/* Submenu */
+.submenu ul {
+    display: none;
+    position: absolute;
+    background-color: #045F5F;
+}
+
+.submenu:hover ul {
+    display: inherit;
+}
+
+.submenu ul li {
+    float: none;
+    border-bottom: 1px solid #fafafa;
+    /* Set your submenu item border color here */
+}
+
+.submenu ul li a {
+    padding: 10px 20px;
+}
+
+.submenu ul li:last-child {
+    border-bottom: none;
+}
+
+/* Search bar style */
+.search-form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-form input {
+    padding: 5px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+}
+
+/* Terms and conditions bar */
+.terms {
+    padding:none;
+    top: 10%;
+}
+
+/* Footer contact and address */
+
+.address1 {
+    text-align: left;
+    margin: 0;
+}
+
+.contact1
+{
+    text-align: center;
+    margin: 0;
+    padding: 0 20px; /* Adjusted padding for better spacing */
+}
+
+/* Style for the generic button */
+input[type="button"] {
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+}
+.add-to-cart-button {
+    background-color: #4caf50;
+    /* Green background */
+    color: white;
+    /* White text color */
+    padding: 10px 15px;
+    /* Padding for the button */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Cursor style */
+}

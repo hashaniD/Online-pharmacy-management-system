@@ -1,0 +1,264 @@
+[9:00 pm, 15/10/2023] Nadeema SLIIT: <?php include_once("header.php"); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+
+    #feedbackForm
+    {
+        background-color: rgba(245, 245, 245, 0.6);
+        margin: 20px;
+        padding: 15px;
+        top: 5px;
+        
+    }
+    .div2
+    {
+        text-align: center;
+        height: 600px;
+    }
+
+    form 
+    {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        background-color: rgba(245, 245, 245, 0.6);
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        right: 800px;
+    }
+
+    label, input, textarea 
+    {
+        display: block;
+        margin-bottom: 10px;
+        margin-right: 100px;
+        font-size: 120%;
+    }
+
+    input[type="text"]
+    {
+        height: 40px;
+        width: 600px;
+        border-radius: 5px;
+    }
+
+    input[type="email"]
+    {
+        height: 40px;
+        width: 600px;
+        border-radius: 5px;
+    }
+    
+    textarea 
+    {
+        width: 95%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .btn1
+    {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-left: -200px;
+        margin-right: -170px;
+        width: 150px;
+        height: 45px;
+        background-color: rgba(7, 95, 95, 0.842);
+        font-size: 120%;
+    }
+
+    .btn1:hover
+    {
+        transform: scale(1.1);
+        background-color: black;
+    }
+    
+    </style>
+</head>
+
+<body>
+    <h1 id="feedbackForm"> Feedback Form </h1> <br> 
+    <form  action="submit.php" method="post" onsubmit="showAlert()">
+
+    <div class="div2">
+        
+        <label for="name"> Name </label>
+        <input type="text" name="name" required> <br> <br>
+
+        <label for="email"> Email </label>
+        <input type="email" name="email" required> <br> <br>
+
+        <label for="message"> Message </label>
+        <textarea name="message" rows="6" required> </textarea> <br> <br>
+
+        <div>
+            <button class="btn1"> Back </button>
+            <button class="btn1"> Submit </button>
+        
+        </div>
+      
+    </div>
+    
+    <br> <br> <br> <br> <br>
+    </form>
+    <script>
+        function showAlert() {
+            alert(" submitted!");
+        }
+    </script>
+
+    <?php include_once("footer.php"); ?>
+
+</body>
+    
+</html>
+[9:00 pm, 15/10/2023] Nadeema SLIIT: payment methods.php
+[9:01 pm, 15/10/2023] Nadeema SLIIT: <?php include_once("header.php"); ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    
+    #div
+    {
+        width: 720px;
+        height: 650px;
+        border-radius: 5px;
+        background-color: rgba(245, 245, 245, 0.6);
+        box-shadow: 0px 0px 10px #ccc;
+        position: relative;
+        left: 600px;
+    }
+
+    .cvc
+    {
+        margin-left: 330px;
+        position: relative;
+        bottom: 15px;
+        top: 3px;
+    }
+
+    .input
+    {
+        border-radius: 8px;
+        height: 35px;
+        width: 250px;
+        margin: 10px 25px;
+        font-size: 120%;
+    }
+
+    #button
+    {
+        height: 45px;
+        width: 200px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 120%;
+        color: white;
+        background-color: rgba(7, 95, 95, 0.842);
+    }
+
+    #button:hover
+    {
+        background-color: black; 
+        transform: scale(1.02);
+    }
+
+    .h2
+    {
+        position: relative;
+        top: 20px;
+        margin: 5px 20px; 
+        position: relative;
+        top: 35px;
+    }
+
+    .crd
+    {
+        margin: 5px 20px; 
+    }
+
+    #card
+    {
+        margin-left: 30px;
+        position: relative;
+        top: 10px;
+    }
+    
+    .h3
+    {
+        margin-left: 30px;
+        position: relative;
+        top: 10px;
+    }
+
+    #txt
+    {
+        margin-left: 30px;
+    }
+
+    #pic
+    {
+        height: 40px;
+        width: 250px;
+        margin: 10px 15px;
+    }
+  </style>
+</head>
+
+<body>
+
+    <br><br><br>
+
+    <div id="div">
+    <center> <h1> Payment Details </h1> </center>
+
+    <h2 class="h2"> Pay With </h2> <br><br>
+
+    <input type="radio" class="crd" name="paymentMethod"> Card
+    <input type="radio" class="crd" name="paymentMethod"> Bank Transfer
+
+    <br>
+    <img src="images/cards.jpg" alt="" id="pic">
+
+    <br><br>
+
+    <h3 id="card"> Card Holder Name </h3> <br>
+    <input type="text" class="input">
+
+    <h3 class="h3"> Card Number </h3> <br>
+    <input type="text" class="input">
+
+    <h3 class="h3"> Expiration Date </h3>
+    <h3 class="cvc"> CVV </h3>
+    <input type="text" class="input">
+    <input type="text" class="input">
+
+    <br> 
+
+    <label for="txt"> <input type="checkbox" id="txt"> Save Card Details </label>
+    <br>
+
+    <center> <a href="save.php"> <button id="button"> Pay </button> </a> <center>
+</div>
+
+<br><br> <br> <br> <br> <br>
+
+<?php include_once("footer.php"); ?>
+
+</body>
+
+</html>
